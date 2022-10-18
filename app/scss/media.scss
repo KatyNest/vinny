@@ -1,0 +1,232 @@
+@media screen and (max-width:1440px) {  
+  .container { 
+    padding: 0 15px; 
+  }
+}
+@media screen and (max-height:875px) {  
+  .header-banner__title {
+    padding-top: 90px;
+    font-size: 120px;
+    line-height: 133px;
+  }
+  .header-banner__subtitle {
+    font-size: 50px;
+    line-height: 60px;
+    }
+    .header-banner__subtitle span {
+      font-size: 30px;
+      line-height: 30px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+  .about__content {
+    padding-left: 60px;
+  }
+  .about__img {max-width: 545px;}
+
+}
+@media screen and (max-width:1120px) {
+  .how__item {margin: 0 10px;}
+  .how__item-text {padding: 0 12px 20px;}
+  .cake__item {max-width: 240px;}
+  .cake__item-title {font-size: 22px;}
+
+}
+@media screen and (max-width:1040px) {
+  .cake__item {max-width: 220px;}
+  }
+
+@media screen and (max-width:1050px) {
+  .about__content {
+    padding-left: 30px;
+  }
+  .about__img {max-width: 545px;}
+
+}
+
+@media screen and (max-width:980px) {
+
+  .header-top {
+    .logo {
+      margin: 0 auto;
+    width: 71px;}
+  }
+  .title {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .header-top__item.left {width: 100%;}
+  .mobile-menu { 
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+       background: rgba(86, 50, 86, 0.85);
+       transform: translateX(-100%);
+       transition: all ease .3s;
+       z-index: 100;
+
+   &.active {transform: translateX(0);}     
+    .menu__list {
+      display: block;
+      padding: 30px 0 30px;
+      margin-left: 0;
+      &-item {
+        margin-bottom: 20px;
+        }   
+      }
+    }
+    .header-phone {display: none;}
+    .header-banner__title {
+      font-size: 140px;
+      line-height: 150px;
+    }
+    .header-banner__subtitle  {
+      font-size: 45px;
+      span {
+        font-size: 35px;
+        line-height: 25px;
+        display: block;
+        padding-top: 45px;
+      }
+    }
+    .about__inner {display: block;}
+    .about__content {
+         padding-left: 30px;
+    }
+  .about__img {
+    width: 100%;
+    margin: 0 auto 30px;
+    max-width: 545px;
+  }
+}
+@media screen and (max-width:890px) {
+  .reviews-slider {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width:835px) {
+  .how__items {
+    flex-wrap: wrap;
+    .how__item {margin: 0 auto 20px;}
+  }
+}
+@media screen and (max-width:768px) {
+    .header-banner__title {
+      font-size: 120px;
+      line-height: 130px;
+    }
+   .header-banner__subtitle  {
+      font-size: 40px;
+      span {
+        font-size: 25px;
+        line-height: 25px;
+        display: block;
+        padding-top: 45px;
+      }
+    }
+  .cakes__items {
+    display: block;
+    .slick-dots {
+       bottom: 25px;
+     }
+  }
+  .cake__item {
+    margin: 0 5px;
+  }
+    .reviews-slider {
+      max-width: 600px;
+      margin: 0 auto;
+      .slick-dots {
+        bottom: 25px;
+      }
+    }
+}
+
+@media screen and (max-width:640px) {
+    .header-banner__title {
+      font-size: 100px;
+      line-height: 110px;
+    }
+   .header-banner__subtitle  {
+      font-size: 35px;
+      span {
+        font-size: 20px;
+        line-height: 20px;
+        display: block;
+        padding-top: 25px;
+      }
+    }
+  }
+@media screen and (max-width:615px) {
+    .reviews-slider {
+      max-width: 290px;
+      margin: 0 auto;
+      .slick-slide {padding: 0;}
+    }
+
+}
+@media screen and (max-width:500px) {
+    .cakes__items {
+     width: 260px;
+      margin: 0 auto;
+
+    }
+    .cake__item {
+       max-width: 260px;
+       margin: 0;
+    }
+}
+@media screen and (max-width:468px) {
+    .title {
+    font-size: 35px;
+    line-height: 41px;
+  } 
+  .header-banner__title {
+      font-size: 80px;
+      line-height: 90px;
+    }
+   .header-banner__subtitle  {
+      font-size: 30px;
+      span {
+        font-size: 16px;
+        line-height: 20px;
+        display: block;
+        padding-top: 25px;
+      }
+    }
+    .footer-menu {
+      .menu__list-item {
+        margin: 0 5px;
+      }
+      .menu__link {
+        font-size: 16px;
+      }
+    }
+  }
+@media screen and (max-width:405px) {
+    .header-banner__title {
+      font-size: 58px;
+      line-height: 68px;
+    }
+   .header-banner__subtitle  {
+      font-size: 24px;
+      line-height:  24px;
+      span {
+        font-size: 16px;
+        line-height: 20px;
+        display: block;
+        padding-top: 25px;
+      }
+    }
+     .footer-menu {
+      .menu__link {
+        font-size: 12px;
+      }
+    }
+  }

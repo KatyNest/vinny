@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Винни Пух | Корзина. Шаг 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+<body>
+<header class="header">
+  <div class="header-top" id="header-top">
+    <div class="container">
+      <div class="header-top__inner">
+        <div class="header-top__item left">
+            <div class="menu-btn">
+              <div class="menu-btn__inner">
+                <div class="menu-btn__line"></div>
+                <div class="menu-btn__line"></div>
+                <div class="menu-btn__line"></div>
+              </div>
+            </div>
+            <div class="logo">
+              <a href="index.html" class="logo-link">
+                <img src="img/logo.svg" alt="" />
+              </a>
+            </div>
+            <nav class=" menu header-menu mobile-menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">  
+                  <a href="index.html#about" class="menu__link menu__link">О нас</a>
+                          </li>
+                          <li class=" menu__list-item">
+                    <a href="index.html#how" class="menu__link">Условия</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="index.html#cakes" class="menu__link">Наши тортики</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="index.html#reviews" class="menu__link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+        <div class="header-top__item rigt"> 
+          <div class="header-phone">+7 903-444-77</div>
+          <div class="header-cart">
+            <a class="header-cart__link" href="cart.html">
+              <div class="header-cart__amount">
+                <span class="cart-amount" data-amount="2"></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="cart">
+  <div class="container">
+    <div class="cart__inner">
+      <div class="title cart-title">Корзина</div>
+      <div class="cart-subtitle">Шаг 2: оформление доставки</div>
+      <form class="delivery" action="" method="">
+          <div class="delivery__title">Способ доставки</div>
+          <div class="delivery-way">
+            <div class="delivery-way__item">
+              <div class="delivery-way__option form_radio">
+                <input type="radio" id="courier" name="delivey" value="Курьером">
+                <label for="courier">Курьером</label>
+              </div>
+              <div class="delivery-way__option form_radio">
+                <input type="radio" id="pickup" name="delivey" value="Самовывоз">
+                <label for="pickup">Самовывоз</label>
+              </div>    
+            </div>
+            <div class="delivery-way__item delivery-date">
+              <label for="date">Выберите дату доставки</label>
+              <input type="text" id="date" name="date" />
+            </div>
+          </div>
+          <div class="delivery-address">
+            <div class="delivery__title">Адрес доставки</div>
+            <div class="delivery-field required">
+              <input type="text" name"city" value="" placeholder="Город">
+            </div>
+            <div class="delivery-address__line">
+              <div class="delivery-field delivery-street required">
+                <input type="text" name"street" value="" placeholder="Улица">
+              </div>
+              <div class="delivery-field delivery-house required">
+                <input type="text" name"house" value="" placeholder="Дом">
+              </div>
+              <div class="delivery-field delivery-flat required">
+                <input type="text" name"flat" value="" placeholder="Квартира">
+              </div>
+            </div>
+            <div class="delivery-address__line">
+              <div class="delivery-field delivery-phone required">
+                <input type="text" name"phone" value="" placeholder="Телефон">
+              </div>
+              <div class="delivery-field delivery-email required">
+                <input type="email" name"email" value="" placeholder="Email">
+              </div>
+            </div>
+            <div class="delivery-field">
+              <textarea name="сomments" id="comments" placeholder="Комментарий"></textarea>
+            </div>
+          </div>
+          <div class="delivery-payment">
+            <div class="delivery__title">Способ оплаты</div>
+            <div class="delivery__subtitle">Оплата производится при получении заказа</div>
+            <div class="delivery-payment__option form_radio">
+              <input type="radio" id="cash" name="payment" value="Наличными">
+              <label for="cash">Наличными</label>
+            </div>
+            <div class="delivery-payment__option form_radio">
+
+              <input type="radio" id="card" name="payment" value="Безналичный расчет">
+              <label for="card">Безналичный расчет</label>
+            </div>
+          </div>
+        <div class="next">
+          <button class="button-pink cart__prev" onclick="window.location.href = 'cart.html';">Назад</button>
+          <button class="button-violet cart__next" onclick="window.location.href = 'cart3.html';">Далее</button>
+        </div>
+        </form> 
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-top__inner">
+        <div class="logo">
+          <a href="#" class="logo-link">
+            <img src="img/logo.svg" alt="" />
+          </a>
+        </div>
+        <nav class="menu footer-menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="#about" class="menu__link menu__link"">О нас</a>
+                                  </li>
+                                  <li class=" menu__list-item">
+                <a href="#how" class="menu__link">Как заказать</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#cakes" class="menu__link">Наши тортики</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#reviews" class="menu__link">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <div class="footer-contacts__title">Контакты</div>
+          <div class="footer-contacts__phone">Телефон: +7 903-444-77</div>
+          <div class="footer-contacts__email">Email: vinny@gmail.com</div>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="footer-social__vk"></a>
+          <!-- <a href="#" class="footer-social__instagram"></a> -->
+          <a href="#" class="footer-social__telegram"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom__copy">© 2021 Домашняя кондитерская ”Винни-пух”</div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>

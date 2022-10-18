@@ -1,0 +1,319 @@
+.cart {
+  &__inner {
+    padding: 60px 0;
+  }
+
+  &-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    &__item {
+       @extend %robotoc-700;
+      font-size: 20px;
+      line-height: 24px;
+      
+      &.prod {
+        width:270px;
+      }
+    }
+  }
+  &__items {
+    max-width: 1070px;
+    margin-bottom: 63px;
+  }
+  &__item {
+      @extend %robotoc-400;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 0;
+      border-top: 1px solid $pink;
+      position: relative;
+     &-remove {
+       position: absolute;
+       top: 15px;
+       right: 0;
+       cursor: pointer;
+     }  
+    &-title {width: 200px;}   
+  }
+  .cakes {
+    width: 74px;
+    height: 60px;
+    border-radius: 20px;
+    border:1px solid $pink;
+    background:#fff;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+  }  
+}
+  .cart-title {
+    margin-bottom: 30px;
+  }
+  .cart-subtitle {
+    font-size: 36px;  
+    @extend %robotoc-500;
+    margin-bottom: 25px;
+  }
+.quantity {
+  position: relative;
+  width: 140px;
+  &-nav {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    width: 100%;
+  }
+  &-button{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+
+  }
+  &-down {right:31px; top:-6px} 
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cart__total {
+  text-align: right;
+  max-width: 1070px;
+  font-size: 36px;
+  @extend %robotoc-400;
+  margin-bottom: 101px;
+  span {
+    font-weight: 700;
+  }
+}
+.next {
+    text-align: right;
+    max-width: 1070px;
+}
+.cart__next {
+  width: 155px;
+}
+.delivery {
+  max-width: 545px;
+   @extend %robotoc-400;
+  &__title {
+   
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 21px;
+  }
+  &__subtitle {
+    margin-bottom: 28px;
+  }
+  &-way {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    &__option {
+      margin-bottom: 16px;
+    }
+  }
+  &-address{
+    &__line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+  }
+  &-field {
+    margin-bottom: 20px;
+    input {width: 100%;}
+  }
+  &-street,
+  &-email, &-phone {width: 260px;}
+  &-house {width: 120px;}
+  &-flat {width: 120px;}
+  &-date {
+    label{
+      margin-bottom: 8px;
+      display: block;
+    }
+  }
+  &-payment {
+    margin-bottom: 50px;
+  }
+}
+#comments {
+  width: 100%;
+  height: 140px;
+}
+.cart__prev {
+  width: 155px;
+  margin-right: 14px;
+}
+input#date {
+  background: #fff url("../img/calendar.svg") no-repeat right 11px center;
+  cursor: pointer;
+}
+.ui-datepicker {
+  background: #fff;
+  border-radius: 20px;
+   box-shadow:0px 3px 14px rgba(100, 92, 159, 0.3);
+
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    width: 20px;
+    height: 20px;
+    top: 8px;
+}
+.ui-datepicker .ui-datepicker-next {
+  background: url("../img/next.svg") no-repeat center center;
+  right: 8px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  background: url("../img/prev.svg") no-repeat center center;
+  left: 8px;
+}
+.ui-datepicker td a {
+  color: $violet;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+.ui-state-disabled span {color: $grey;}
+ .ui-datepicker .ui-datepicker-today a,
+.ui-datepicker td a.ui-state-active,
+.ui-datepicker td a.ui-state-active:hover {
+  border-radius: 100%;
+  background:$purple ;
+  color:$grey
+}
+.ui-datepicker td a:hover {color:$purple}
+
+.incart__items {
+  max-width: 480px;
+  @extend %robotoc-400;
+
+}
+.incart__item, .incart-delivery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+  &-img {
+    width: 170px;
+    border: 1px solid #BC90BA;
+  }
+}
+.incart-delivery {
+  font-size: 24px;
+  &__title {
+    @extend %robotoc-700;
+  }
+}
+.incart__total {
+  text-align: right;
+  font-size: 24px;
+  margin-bottom: 58px;
+  span {
+    font-size: 36px;
+    @extend %robotoc-700;
+  }
+}
+.delivery__val {
+  margin-bottom: 58px;
+}
+.delivery__val >div {
+  margin-bottom: 11px;
+}
+.cart__success {
+  text-align: center;
+  .cart-title {
+    margin-bottom: 60px;
+  }
+  &-text {
+    max-width: 369px;
+    margin: 0 auto 40px;
+  }
+}
+.cart__home {
+  width: 186px;
+}
+
+@media screen and (max-width:980px) {
+  .cart__inner {padding: 40px 0;}
+}
+
+@media screen and (max-width:768px) {
+  .cart__item-img {max-width: 150px;}
+  .cart .cakes {width: 60px;}
+}
+@media screen and (max-width:768px) {
+  .cart__item-img {max-width: 150px;}
+  .cart .cakes {width: 60px;}
+  .cart__items {
+    margin-bottom: 30px;
+  }
+  .cart__total {margin-bottom: 40px;}
+}
+@media screen and (max-width:630px) {
+  .cart__items {
+  
+  }
+  .cart__item {
+    display: block;
+    max-width: 290px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: none;
+    border-bottom: 1px solid $pink; 
+    &:last-child {
+      border-bottom: none;
+    }   
+  }
+  .cart-heading {display: none;}
+  .cart__item-img {max-width: 240px;
+    margin-bottom: 10px;
+  }
+  .cart__item-amount {
+    width: 140px;
+    margin:0 auto
+  }
+  .cart__item-title {
+    margin: 0 auto 15px;
+    
+  }
+  .quantity {margin-bottom: 15px;}
+  .quantity-down {
+    left:0;
+    right: auto;
+  }
+
+}
+@media screen and (max-width:570px) {
+
+  .delivery {
+    margin: 0 auto;
+  max-width: 400px;}
+
+  .delivery-address__line {display: block;}
+  .delivery-street, .delivery-email, .delivery-phone,
+  .delivery-house,.delivery-flat{
+    width: auto;
+  }
+}
+@media screen and (max-width:400px) {
+  .delivery-way {display: block;}
+  .delivery-way__item.delivery-date {
+    padding-top: 12px;
+  }
+
+  .cart__next, .cart__prev {
+    width: 130px;
+  }
+}

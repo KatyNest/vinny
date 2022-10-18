@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: $black;
+    background: #fff;
+    min-width: 320px;
+    overflow-x: hidden;
+  
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+      @extend %pacifico-400;
+      font-size: 46px;
+      line-height: 46px;
+      color:$purple;
+      opacity: 0.9;
+  }
+  .button-violet {
+    height: 50px;
+    background: linear-gradient(0deg, #563256 48.44%, rgba(86, 50, 86, 0.78) 84.37%);
+    box-shadow: 0px 10px 10px 6px rgba(86, 50, 86, 0.38);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    color:$grey;
+    @extend %robotoc-400;
+    border:none;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 10px 10px 6px rgba(86, 50, 86, 0.42);
+      background: $purple
+    }
+  }
+    .button-pink {
+    height: 50px;
+    background: $pink;
+    box-shadow: 0px 4px 12px rgba(100, 92, 159, 0.3);;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    color:$grey;
+    @extend %robotoc-400;
+    border:none;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 10px 10px 6px rgba(86, 50, 86, 0.42);
+      background: $purple
+    }
+  }
+  input[type="text"],
+  input[type="email"] {
+    background: #FFFFFF;
+    opacity: 0.6;
+    border-radius: 20px;
+    box-shadow:0px 3px 14px rgba(100, 92, 159, 0.3);
+    border:none;
+    padding: 18px 24px 17px;
+    height: 50px;
+    outline: none !important;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color:#B0AFBC;
+    @extend %robotoc-400;
+  }
+    input::placeholder::after{
+      content:"*";
+      color: $pink;
+    }
+  textarea {
+    background: #FFFFFF;
+    opacity: 0.6;
+    border-radius: 20px;
+    box-shadow:0px 3px 14px rgba(100, 92, 159, 0.3);
+    border:none;
+    padding: 18px 24px 17px;
+    outline: none !important;
+  }
+
+  .form_radio {
+	margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 34px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url("../img/radio.svg") 0 0 no-repeat;
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+	background:  url("../img/radio-active.svg") 0 0 no-repeat;
+}
+ 
